@@ -30,3 +30,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+## Search Example
+
+Searching `Tom Jones` and selecting `Tom Jones - Ages & Stages Tour` is a good example to showcase how the Event Listing App works.

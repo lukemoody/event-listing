@@ -9,18 +9,14 @@ import EventDetail from './components/events/EventDetail';
 import ArtistDetail from './components/artists/ArtistDetail';
 import NoPage from './components/error/NoPage';
 
-// https://www.skiddle.com/?_gl=1*bjep44*_ga*MjExNDI1MzM3NS4xNjg0MTUwODkz*_ga_C0FC5CF2T2*MTY4NDQxMTUwNy42LjEuMTY4NDQxMzUxMi4yMi4wLjA.
-
 function App() {
-    // TOOD: add type
-    const [search, setSearch] = useState({
+    const [search, setSearch] = useState<object>({
         keyword: '',
         results: [],
         isLoading: true,
     });
 
-    // TOOD: add type
-    const [event, setEvent] = useState({
+    const [event, setEvent] = useState<object>({
         artists: [],
         eventname: '',
         description: '',
@@ -37,8 +33,7 @@ function App() {
         isLoading: true,
     });
 
-    // TOOD: add type
-    const [artist, setArtist] = useState({
+    const [artist, setArtist] = useState<object>({
         name: '',
         description: '',
         imageurl: '',
