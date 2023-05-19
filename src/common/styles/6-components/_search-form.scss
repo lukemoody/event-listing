@@ -1,0 +1,15 @@
+.search-form {
+    background-color: $c-primary;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__logo {
+        margin: auto;
+        text-align: center;
+        max-width: 430px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

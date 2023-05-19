@@ -1,0 +1,11 @@
+.artist {
+    &__description {
+        @include breakpoint(tabletWide) {
+            max-width: 630px;
+        }
+
+        @include breakpoint(desktop) {
+            max-width: 740px;
+        }
+    }
+}

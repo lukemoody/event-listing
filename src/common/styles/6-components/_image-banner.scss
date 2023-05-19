@@ -1,0 +1,39 @@
+.image-banner {
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+    height: 300px;
+
+    &__media {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 100% 100%, 0 65%);
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 100% 100%, 0 65%);
+        filter: blur(8px);
+    }
+
+    &__pattern-1 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        overflow: hidden;
+        background-color: #181808;
+        clip-path: polygon(0 64%, 100% 99%, 100% calc(100% + 1px), 0 calc(65% + 0px));
+    }
+
+    &__pattern-2 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        overflow: hidden;
+        background-color: #181808;
+        clip-path: polygon(0% 164px, 100% 330px, 100% 299px, 0% 195px);
+    }
+}

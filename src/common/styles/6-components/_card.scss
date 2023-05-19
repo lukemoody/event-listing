@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $c-grey-mid;
+    background-color: $c-white;
+    margin-bottom: 40px;
+    width: 100%;
+    -webkit-box-shadow: 0px 6px 31px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 6px 31px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 31px 5px rgba(0, 0, 0, 0.1);
+
+    @include breakpoint(tabletWide) {
+        width: calc(33.33333333% - 40px);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__description {
+        color: $c-grey-mid;
+        font-size: $font-size-5;
+        line-height: $line-height-5;
+    }
+
+    &__list-item {
+        svg path {
+            fill: $c-grey-mid;
+        }
+    }
+
+    &__action {
+        padding: 20px;
+    }
+}

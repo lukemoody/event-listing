@@ -1,0 +1,13 @@
+.site-header {
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: auto;
+
+    &__logo {
+        width: 160px;
+        margin-left: -20px;
+    }
+}

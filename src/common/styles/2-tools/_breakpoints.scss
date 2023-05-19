@@ -1,0 +1,14 @@
+/**
+* Breakpoints
+*
+* use like:
+* @include breakpoint(XXX){
+*   ...
+* }
+**/
+
+@mixin breakpoint($breakpoint) {
+    @media only screen and ( min-width : map-get($breakpoints, $breakpoint) ) {
+        @content;
+    }
+}

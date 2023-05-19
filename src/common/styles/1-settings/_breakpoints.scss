@@ -1,0 +1,17 @@
+/**
+* Breakpoints
+* Based on https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+*
+* Define media query breakpoints
+* we're defining a mobile value as 0px to be used as a default value in mixins using the breakpoint list
+**/
+
+$breakpoints: (
+    "mobile": "0",
+    "tablet": "600px",
+    "tabletWide": "991px",
+    "medium": "1024px",
+    "desktop": "1200px",
+    "bigDesktop": "1400px",
+    "xlDesktop": "1600px",
+) !default;

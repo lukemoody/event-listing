@@ -1,0 +1,16 @@
+/**
+* Spacing
+*
+* If we're defining consistant spacing across the website, 
+* variables would go into this file
+**/
+
+$block-spacing: 65px;
+$block-spacing-large: 177px;
+$block-spacing-mobile: 45px;
+
+$gutter-width: 24px;
+$gutter-width-mobile: 10px;
+$container-width: calc(1110px + #{$gutter-width} * 2);
+$container-fluid-width: 100%;
+$container-width-slim: 800px;

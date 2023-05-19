@@ -1,0 +1,40 @@
+.button {
+    position: relative;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: $font-size-5;
+    font-weight: $font-weight-semibold;
+    text-align: center;
+    transition: $transition-base;
+
+    @include breakpoint(tabletWide) {
+        padding: 15px 20px;
+    }
+}
+
+.button--primary {
+    background-color: $c-primary;
+    color: $c-white;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+a.button {
+    text-decoration: none;
+}
+
+button.button {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.button + .button {
+    margin-left: 12px;
+
+    @include breakpoint(tabletWide) {
+        margin-left: 22px;
+    }
+}

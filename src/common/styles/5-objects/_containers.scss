@@ -1,0 +1,36 @@
+.container,
+.container-fluid,
+.container-slim {
+    display: block;
+    height: 100%;
+    padding-right: $gutter-width-mobile;
+    padding-left: $gutter-width-mobile;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include breakpoint(tablet) {
+        padding-right: ($gutter-width);
+        padding-left: ($gutter-width);
+    }
+}
+
+.container {
+    @include breakpoint(tabletWide) {
+        max-width: $container-width;
+    }
+}
+
+.container-fluid {
+    max-width: $container-fluid-width;
+}
+
+.container-slim {
+    max-width: $container-width-slim;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: $gutter-width / 2;
+    margin-left: $gutter-width / 2;
+}

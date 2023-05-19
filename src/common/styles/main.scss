@@ -1,0 +1,50 @@
+/**
+ * The structure is based on ITCSS.
+ *
+ * This is where all of the stylesheets are compiled.
+ * They are processed in the order they are imported
+ * to ensure the consistent increase of specificity.
+ *
+ *    ITCSS Methodology: Inverted Triangle CSS
+ *
+ *    *************   1. Settings
+ *     ***********    2. Tools
+ *      *********     3. Generic
+ *       *******      4. Elements
+ *        *****       5. Objects
+ *         ***        6. Components
+ *          *         7. Utilities       
+ *
+ * Ref: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ */
+@import '1-settings/breakpoints.scss';
+@import '1-settings/colors.scss';
+@import '1-settings/spacing.scss';
+@import '1-settings/typography.scss';
+@import '1-settings/transitions.scss';
+
+@import '2-tools/breakpoints.scss';
+@import '2-tools/placeholder.scss';
+
+@import '3-generic/font-face.scss';
+
+@import '4-elements/document.scss';
+@import '4-elements/typography.scss';
+
+@import '5-objects/backgrounds.scss';
+@import '5-objects/containers.scss';
+@import '5-objects/details-list.scss';
+@import '5-objects/icon.scss';
+
+@import '6-components/artist-links.scss';
+@import '6-components/artist-stats-banner.scss';
+@import '6-components/buttons.scss';
+@import '6-components/card.scss';
+@import '6-components/forms.scss';
+@import '6-components/grid.scss';
+@import '6-components/header.scss';
+@import '6-components/image-banner.scss';
+@import '6-components/search-form.scss';
+
+@import '7-utilities/artist.scss';
+@import '7-utilities/event.scss';

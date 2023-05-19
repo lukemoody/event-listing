@@ -1,0 +1,20 @@
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Fields */
+.form-input {
+    border: 0;
+    border-radius: 44px;
+    color: $c-black;
+    height: 50px;
+    font-size: $font-size-3;
+    padding: 0 20px;
+    text-align: center;
+
+    @include placeholder {
+        color: $c-grey-light-2;
+    }
+}
